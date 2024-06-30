@@ -85,3 +85,14 @@
   direction: rtl; /* Right-to-left text direction for Urdu */
   unicode-bidi: bidi-override; /* Override text direction */
 }
+
+@font-face {
+  font-family: 'JameelNooriNastaleeq';
+  src: url('/fonts/Jameel Noori Nastaleeq Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
+
+.nastaleeqFont {
+  font-family: "JameelNooriNastaleeq", sans-serif;
+}

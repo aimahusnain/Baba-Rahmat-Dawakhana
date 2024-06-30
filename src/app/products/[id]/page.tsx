@@ -48,7 +48,7 @@ export default async function ProductPage({
   };
 
   const determineFontClass = (text: string) => {
-    return isUrdu(text) ? "font-urdu" : "font-sans";
+    return isUrdu(text) ? "nastaleeqFont" : "font-sans";
   };
 
   return (
@@ -88,7 +88,7 @@ export default async function ProductPage({
             </div>
 
             {/* Render product description with language-specific fonts */}
-            <div className="text-base tracking-wide mb-6">
+            <div className="text-md tracking-wide mb-6">
               {product.description.split('<brh />').map((line, index) => (
                 <React.Fragment key={index}>
                   <p className={determineFontClass(line)}>{line}</p>
