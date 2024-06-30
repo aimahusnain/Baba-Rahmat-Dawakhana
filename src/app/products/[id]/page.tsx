@@ -1,21 +1,12 @@
-import PriceTag from "@/src/components/PriceTag";
-import { prisma } from "@/src/lib/db/prisma";
-import { Metadata } from "next";
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import { cache, useRef } from "react";
-import AddToCartButton from "./AddToCartButton";
 import { Button } from "@/src/components/ui/button";
-import { incrementProductQuantity } from "./actions";
-import { Star, Truck } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/src/components/ui/carousel";
+import { prisma } from "@/src/lib/db/prisma";
+import { Star } from "lucide-react";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { cache } from "react";
+import AddToCartButton from "./AddToCartButton";
 import ImageGallary from "./ImageGallary";
+import { incrementProductQuantity } from "./actions";
 
 interface ProductPageProps {
   params: {
