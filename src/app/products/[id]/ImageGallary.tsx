@@ -22,7 +22,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
         alt="Photo"
         height={5353254}
         width={4565567}
-        className="h-[600px] object-cover w-full object-center rounded-xl"
+        className="h-fit object-cover w-full object-center rounded-xl"
       />
 
       {images.length > 1 ? (
@@ -38,7 +38,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
                 alt="photo"
                 height={5353254}
                 width={4565567}
-                className="h-30 w-full  object-cover object-center"
+                className="h-full w-full object-cover object-center"
               />
             </div>
           ))}
