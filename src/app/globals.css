@@ -80,3 +80,8 @@
   background-color: #DB2777;
   color: #fff;
 }
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Segoe UI', serif; /* Example Urdu font */
+  direction: rtl; /* Right-to-left text direction for Urdu */
+  unicode-bidi: bidi-override; /* Override text direction */
+}
