@@ -35,12 +35,6 @@ async function addProduct(formData: FormData) {
 }
 
 export default async function AddProductPage() {
-  // const session = await getServerSession(authOptions);
-
-  // if (!session) {
-  //   redirect("/api/auth/signin?callbackUrl=/add-product");
-  // }
-
   const products = await prisma.product.findMany({
     orderBy: { id: "desc" },
   });
