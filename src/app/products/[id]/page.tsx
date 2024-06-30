@@ -7,6 +7,7 @@ import { cache } from "react";
 import AddToCartButton from "./AddToCartButton";
 import ImageGallary from "./ImageGallary";
 import { incrementProductQuantity } from "./actions";
+import React from "react";
 
 interface ProductPageProps {
   params: {
@@ -26,8 +27,8 @@ export async function generateMetadata({
   const product = await getProduct(id);
 
   return {
-    title: product.name + " - Flowmazon",
-    description: product.description,
+    title: product.name + " - Beauty Bugz",
+    description: product.description.replace(/<brh \/>/g, "<br />"), // Replace <brh /> with <br />
     openGraph: {
       images: [{ url: product.imageUrls[0] }],
     },
@@ -117,7 +118,7 @@ export default async function ProductPage({
     //   </div>
     // </div>
 
-    <div className="grid sm:grid-cols-2 grid-rows-1 gap-7 px-7">
+    <div className="grid sm:grid-cols-2 grid-rows-1 gap-7 px-7 mb-10">
       {/* Text Husnain Div */}
 
     <div className="mt-7">  <ImageGallary images={product.imageUrls} /></div>
@@ -157,9 +158,16 @@ export default async function ProductPage({
                 </div>
               </div>
 
-              <p className="text-base text-gray-500 tracking-wide">
-                {product.description}
-              </p>
+              {/* Render product description with line breaks */}
+            <div className="text-base text-gray-500 tracking-wide">
+              {product.description.split('<brh />').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                  <br />
+                </React.Fragment>
+              ))}
+            </div>
               <div className="grid gap-3 grid-cols-2 mt-2">
                 {" "}
                 <button className="bg-black w-full text-white rounded-md">

@@ -17,7 +17,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     
     <div key={product.id} className="group relative my-12">
       <span className="absolute top-5 right-8 z-20 inline-flex items-center justify-center rounded-full bg-pink-500 py-2 px-4 text-sm font-semibold capitalize text-white">
-        $ {product.price}
+         {product.price} PKR
       </span>
       <div>
         <Link href={"/products/" + product.id}>
