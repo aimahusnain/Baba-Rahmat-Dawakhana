@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     
     <div key={product.id} className="group relative my-12">
-      <span className="absolute top-5 right-8 z-20 inline-flex items-center justify-center rounded-full bg-darkgreen py-2 px-4 text-sm font-semibold capitalize text-white">
+      <span className="absolute top-5 right-8 z-20 inline-flex items-center justify-center rounded-full bg-primarygreen-300 py-2 px-4 text-sm font-semibold capitalize text-white">
          {product.price} PKR
       </span>
       <div>
@@ -30,7 +30,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           />
         </Link>
       </div>
-          {/* <Link href={`/collections/${product.collections}`} className="mt-2 text-sm bg-darkgreen px-2 py-0.5 font-bold text-white w-fit rounded-xl rounded-l-none">
+          {/* <Link href={`/collections/${product.collections}`} className="mt-2 text-sm bg-primarygreen-300 px-2 py-0.5 font-bold text-white w-fit rounded-xl rounded-l-none">
             {product.collections}
           </Link> */}
       <div className="mt-1 text-center">

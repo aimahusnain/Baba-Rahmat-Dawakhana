@@ -31,7 +31,7 @@ export default function ShoppingCartButton({ cart }: ShoppingCartButtonProps) {
       <DropdownMenu>
         <DropdownMenuTrigger className="flex">
           <ShoppingBag size={20} className="text-black" />
-          <Badge className="relative bottom-[9px] bg-darkgreen hover:bg-darkgreen text-white right-[5px] p-0 px-1">
+          <Badge className="relative bottom-[9px] bg-primarygreen-300 hover:bg-primarygreen-300 text-white right-[5px] p-0 px-1">
             {cart?.size || 0}
           </Badge>
         </DropdownMenuTrigger>

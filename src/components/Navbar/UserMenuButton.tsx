@@ -50,7 +50,7 @@ export default function UserMenuButton({ session }: UserMenuButtonProps) {
             <div></div>
           ) : (
             <Button
-              className="relative border-2 border-white bg-darkgreen"
+              className="relative border-2 border-white bg-primarygreen-300"
               onClick={() => signIn()}
             >
               Sign In

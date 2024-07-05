@@ -43,7 +43,7 @@ export default async function Home({
 
   return (
     <>
-      <div className="circlePositon w-[590px] h-[400px] bg-darkgreen/60 rounded-full absolute -z-[1] top-[110%] left-[0%] translate-x-[-50%] translate-y-[-50%] blur-[90px]" />
+      <div className="circlePositon w-[590px] h-[400px] bg-primarygreen-300/60 rounded-full absolute -z-[1] top-[110%] left-[0%] translate-x-[-50%] translate-y-[-50%] blur-[90px]" />
 
       <div className="relative sm:hidden block">
         <Image
@@ -57,7 +57,7 @@ export default async function Home({
         <div className="absolute bottom-3 left-4 p-4 right-4 sm:left-10 sm:right-10 hover:bg-black/20 transition-all bg-gradient-to-tr rounded-none from-black/40 to-transparent backdrop-blur-sm  text-white">
           <h3 className="text-xl font-semibold mb-1">-Presenting-</h3>
           <h3 className="text-2xl sm:text-xl font-semibold">
-            <span className="text-darkgreen">Dream Glow</span> Cream{" "}
+            <span className="text-primarygreen-300">Dream Glow</span> Cream{" "}
           </h3>
           <h4 className="text-xl mb-4">Instant Skin Reviviever</h4>
           <h3 className="text-xl font-semibold mb-">
@@ -66,7 +66,7 @@ export default async function Home({
           <div className="flex justify-between items-center">
             <p className="text-sm sm:text-base">${products[0].price}</p>
             <Link
-              className="inline-block bg-darkgreen hover:bg-purple-600 text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
+              className="inline-block bg-primarygreen-300 hover:bg-purple-600 text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
               href={`products/${products[0].id}`}
             >
               Shop Now
@@ -84,10 +84,10 @@ export default async function Home({
           alt="HomePage Image"
           className="w-full"
         />
-        <div className="absolute bottom-6 w-[60%] md:w-[50%] lg:w-[40%] left-4 right-4 md:left-10 md:right-10 transition-all  rounded-2xl bg-darkgreen/70 backdrop-blur-sm md:p-8 p-4 text-white">
+        <div className="absolute bottom-6 w-[60%] md:w-[50%] lg:w-[40%] left-4 right-4 md:left-10 md:right-10 transition-all  rounded-2xl bg-primarygreen-300/70 backdrop-blur-sm md:p-8 p-4 text-white">
           <h3 className="text-2xl font-semibold mb-1">-Presenting-</h3>
           <h3 className="text-4xl font-semibold mb-1">
-            <span className="text-lightgreen">Ishq-e-zarjam</span> Capsules{" "}
+            <span className="text-primarygreen-100">Ishq-e-zarjam</span> Capsules{" "}
           </h3>
           <h4 className="text-xl font-semibold mb-4">
           Mardana Quwwat ka khizana
@@ -98,7 +98,7 @@ export default async function Home({
           <div className="flex justify-between items-center">
             <p className="text-sm">Rs. 9,300</p>
             <Link
-              className="inline-block bg-lightgreen hover:bg-darkgreen text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
+              className="inline-block bg-primarygreen-200 hover:bg-primarygreen-300 text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
               href={`products/${products[0].id}`}
             >
               Shop Now
@@ -134,9 +134,9 @@ export default async function Home({
                     alt={`Image ${index + 1}`}
                     width={700}
                     height={700}
-                    className="rounded-[3rem] transition-all hover:opacity-80 shadow-md shadow-lightgreen bg-lightgreen object-cover object-center h-full w-full"
+                    className="rounded-[3rem] transition-all hover:opacity-80 shadow-md shadow-primarygreen-200 bg-primarygreen-200 object-cover object-center h-full w-full"
                   />
-                  <h1 className="absolute bottom-5 left-[4rem] w-fit bg-darkgreen backdrop-blur-sm rounded-full text-white text-xl font-bold py-2 px-6">
+                  <h1 className="absolute bottom-5 left-[4rem] w-fit bg-primarygreen-300 backdrop-blur-sm rounded-full text-white text-xl font-bold py-2 px-6">
                     {collection.collections}
                   </h1>
                 </Link>

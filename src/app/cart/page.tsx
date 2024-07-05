@@ -56,7 +56,7 @@ export default async function CartPage() {
               {" "}
               Total: {cart?.subtotal || 0}
             </p>
-            <button className="bg-lightgreen text-white px-6 py-3 rounded-md hover:bg-darkgreen transition duration-300 ease-in-out w-full">
+            <button className="bg-primarygreen-200 text-white px-6 py-3 rounded-md hover:bg-primarygreen-300 transition duration-300 ease-in-out w-full">
               Proceed to Payment
             </button>
           </div>

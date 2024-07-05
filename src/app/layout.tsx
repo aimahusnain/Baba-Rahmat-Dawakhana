@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
@@ -36,7 +36,7 @@ export default function RootLayout({
           d.getElementsByTagName("head")[0].appendChild(s);})();
             `,
           }}
-        ></script>
+        ></script> */}
       </head>
       <body
         // 

@@ -23,7 +23,7 @@ const Pioneers = () => {
           Formulations = Result-driven Products
         </p>
         <Link href="/collections/all">
-          <Button className="mt-1 bg-lightgreen hover:bg-darkgreen">See All Products</Button>
+          <Button className="mt-1 bg-primarygreen-200 hover:bg-primarygreen-300">See All Products</Button>
         </Link>
       </div>
     </div>

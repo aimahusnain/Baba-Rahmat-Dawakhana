@@ -3,7 +3,7 @@
 
   const WhyChoose = () => {
     return (
-      <div className="sm:grid flex-col my-12 sm:pb-0 pb-8 flex sm:gap-0 gap-7 items-center h-fit bg-darkgreen -mx-4 sm:grid-cols-2">
+      <div className="sm:grid flex-col my-12 sm:pb-0 pb-8 flex sm:gap-0 gap-7 items-center h-fit bg-primarygreen-300 -mx-4 sm:grid-cols-2">
                 
         <Image
           src="/Why Choose.png"
