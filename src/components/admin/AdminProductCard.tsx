@@ -96,7 +96,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {/* <Image
               src={product.imageUrls[0]}
               alt="Product image"
-              className="object-cover rounded-xl hover:opacity-90 transition-all w-full bg-pink-500"
+              className="object-cover rounded-xl hover:opacity-90 transition-all w-full bg-darkgreen"
               width={600}
               height={300}
             /> */}
@@ -109,7 +109,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                     <Image
                       src={url}
                       alt={`Product image ${index}`}
-                      className="object-cover rounded-xl hover:opacity-90 transition-all w-full bg-pink-500"
+                      className="object-cover rounded-xl hover:opacity-90 transition-all w-full bg-darkgreen"
                       width={600}
                       height={300}
                     />
@@ -124,11 +124,11 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="flex-1 p-4">
           <Link
             href={`collections/${product.collections}`}
-            className="mt-2 text-sm bg-pink-600 px-2 py-0.5 font-bold text-white inline-block rounded-md"
+            className="mt-2 text-sm bg-darkgreen px-2 py-0.5 font-bold text-white inline-block rounded-md"
           >
             {product.collections}
           </Link>
-          <h3 className="text-xl mt-1 font-bold hover:text-pink-600 hover:underline text-gray-800">
+          <h3 className="text-xl mt-1 font-bold hover:text-darkgreen hover:underline text-gray-800">
             <Link href={"/products/" + product.id}>{product.name}</Link>
           </h3>
 
@@ -136,7 +136,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {isNew && (
             <div className="text-xs text-gray-500 mt-1">New Arrival</div>
           )}
-          <span className="absolute bottom-4 right-4 z-20 flex items-center justify-center rounded-full bg-pink-600 py-1 px-3 text-sm font-semibold capitalize text-white">
+          <span className="absolute bottom-4 right-4 z-20 flex items-center justify-center rounded-full bg-light-green py-1 px-3 text-sm font-semibold capitalize text-white">
             ${product.price}
           </span>
           {isEditing ? null : (

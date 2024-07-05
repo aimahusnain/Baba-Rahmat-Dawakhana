@@ -30,8 +30,8 @@ export default function ShoppingCartButton({ cart }: ShoppingCartButtonProps) {
     <div className="outline-none">
       <DropdownMenu>
         <DropdownMenuTrigger className="flex">
-          <ShoppingBag size={20} className="text-black sm:text-white" />
-          <Badge className="relative bottom-[9px] bg-pink-500 hover:bg-pink-500 text-white right-[5px] p-0 px-1">
+          <ShoppingBag size={20} className="text-black" />
+          <Badge className="relative bottom-[9px] bg-darkgreen hover:bg-darkgreen text-white right-[5px] p-0 px-1">
             {cart?.size || 0}
           </Badge>
         </DropdownMenuTrigger>

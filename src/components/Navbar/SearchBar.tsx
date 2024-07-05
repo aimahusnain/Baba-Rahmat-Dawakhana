@@ -52,7 +52,7 @@ const Searchbar = ({ searchProducts }: any) => {
       {/* Search icon */}
       <motion.button
         onClick={toggleSearch}
-        className={`mr-2 text-gray-300 focus:outline-none ${
+        className={`mr-2 text-gray-800 focus:outline-none ${
           isSearchOpen ? "hidden" : ""
         }`}
         initial={{ x: 0, opacity: 1 }}
@@ -62,7 +62,7 @@ const Searchbar = ({ searchProducts }: any) => {
         }}
         transition={{ duration: 0.2 }}
       >
-        <Search className="h-6 w-6 mt-2" stroke="white" />
+        <Search className="h-6 w-6 mt-2" stroke="black" />
       </motion.button>
 
       {/* Search bar */}

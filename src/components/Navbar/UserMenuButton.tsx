@@ -50,7 +50,7 @@ export default function UserMenuButton({ session }: UserMenuButtonProps) {
             <div></div>
           ) : (
             <Button
-              className="relative bg-gradient-to-l border-2 border-white from-pink-500 to-purple-500"
+              className="relative border-2 border-white bg-darkgreen"
               onClick={() => signIn()}
             >
               Sign In

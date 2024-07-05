@@ -9,7 +9,7 @@ export function generateMetadata({
   searchParams: { query },
 }: SearchPageProps): Metadata {
   return {
-    title: `Search: ${query} - Beauty Bugz`,
+    title: `Search: ${query} - Baba Rahmat Dawakhana`,
   };
 }
 export default async function SearchPage({

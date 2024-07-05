@@ -10,7 +10,7 @@ import UpiUp from "../components/UpiUp";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Beauty Bugz",
+  title: "Baba Rahmat Dawakhana",
   description: "Love Beauty for Ever!",
 };
 

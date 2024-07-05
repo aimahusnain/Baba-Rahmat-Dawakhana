@@ -37,7 +37,7 @@ export default async function Navbar() {
   const cart = await getCart();
 
   return (
-    <div className="h-fit items-center text-black bg-pink-500 py-2 px-7 sm:px-12 shadow-md">
+    <div className="h-fit items-center text-black bg-white py-2 px-7 sm:px-12 shadow-md">
       <div className="mx-auto flex justify-between items-center gap-2">
         <div className="flex sm:hidden">
           <Sheet>
@@ -73,7 +73,7 @@ export default async function Navbar() {
           </Sheet>
         </div>
 
-        <ul className="sm:flex hidden gap-6 font-sans font-semibold text-white">
+        <ul className="sm:flex hidden gap-6 font-sans font-semibold">
           <li>
             <Link href="#" className="transition-all">
               Blog
@@ -92,8 +92,9 @@ export default async function Navbar() {
         </ul>
 
         {/* logo */}
-        <Link href="/" className="flex mt-2 items-center text-3xl sm:text-4xl">
-          <Image width={320} height={60} loading="eager" src="/Logo.svg" alt="Logo" />
+        <Link href="/" className="flex text-white font-bold font-sans items-center text-3xl">
+          <Image width={320} height={60} loading="eager" src="/Logo.png" alt="Logo" />
+          {/* <h1>Baba Rahmat Dawakhana</h1> */}
         </Link>
 
         <div className="flex gap-4">
@@ -109,7 +110,7 @@ export default async function Navbar() {
           {/* responsive dropdown menu */}
           <div className="sm:hidden">
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex p-2 border border-white outline-none rounded-full">
+              <DropdownMenuTrigger className="flex p-2 border border-black outline-none rounded-full">
                 <IoMdMore fill="white" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="flex gap-2">

@@ -8,7 +8,7 @@ import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Your Cart - Beauty Bugz",
+  title: "Your Cart - Baba Rahmat Dawakhana",
 };
 
 export default async function CartPage() {
@@ -56,7 +56,7 @@ export default async function CartPage() {
               {" "}
               Total: {cart?.subtotal || 0}
             </p>
-            <button className="bg-purple-600 text-white px-6 py-3 rounded-md hover:bg-pink-600 transition duration-300 ease-in-out w-full">
+            <button className="bg-lightgreen text-white px-6 py-3 rounded-md hover:bg-darkgreen transition duration-300 ease-in-out w-full">
               Proceed to Payment
             </button>
           </div>

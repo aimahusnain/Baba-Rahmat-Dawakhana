@@ -154,17 +154,18 @@ export default function Footer() {
             </TooltipProvider>
           </div>
           <p className="mt-8 text-base leading-6 text-center text-gray-400">
-            © 2026 Beauty Bugz, Inc. All rights reserved.
+            © 2026 Baba Rahmat Dawakhana, Inc. All rights reserved.
           </p>
         </div>
-        <Image
+        {/* <Image
           className="w-full"
           loading="eager"
           width={320}
           height={60}
           src="/Logo in Text black.svg"
           alt="Logo"
-        />
+        /> */}
+        <h1 className="text-white w-full font-bold">Baba Rahmat Dawakhana</h1>
       </section>
     </div>
   );

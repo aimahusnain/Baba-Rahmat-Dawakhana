@@ -46,7 +46,7 @@ const CategoryList: React.FC<Props> = ({ list }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {sortedList.map((product) => (
           <div key={product.id} className="group relative">
-            <span className="absolute top-5 right-8 z-20 inline-flex items-center justify-center rounded-full bg-pink-500 py-2 px-4 text-sm font-semibold capitalize text-white">
+            <span className="absolute top-5 right-8 z-20 inline-flex items-center justify-center rounded-full bg-darkgreen py-2 px-4 text-sm font-semibold capitalize text-white">
               $ {product.price}
             </span>
             <div>
