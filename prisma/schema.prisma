@@ -10,15 +10,15 @@ datasource db {
 model Product {
   id          String     @id @default(auto()) @map("_id") @db.ObjectId
   description String
-  imageUrls   String[] // Change imageUrl to imageUrls
+  imageUrls   String[]
   name        String
   price       Int
   collections String
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
   CartItem    CartItem[]
-
-  @@map("products")
+  detailedDescription String?
+@@map("products")
 }
 
 model Cart {

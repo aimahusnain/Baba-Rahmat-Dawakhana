@@ -15,17 +15,17 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   };
 
   return (
-    <div className="mb-10">
+    <div className="h-fit">
       {/* Big image */}
-      <div className="h-">
-      <Image
-        src={bigImage}
-        alt="Photo"
-        height={500}
-        width={1000}
-        className="h-fit object-cover w-full object-center rounded-xl"
+      <div className="h-full">
+        <Image
+          src={bigImage}
+          alt="Photo"
+          height={800}
+          width={800}
+          className="h-[550px] rounded-xl"
         />
-        </div>
+      </div>
 
       {images.length > 1 ? (
         <div className="flex gap-4 mt-4 bottom-0 left-0 right-0 justify-center">
@@ -38,9 +38,10 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               <Image
                 src={image}
                 alt="photo"
-                height={5353254}
-                width={4565567}
-                className="h-30 w-full  object-cover object-center"
+                layout="fixed"
+                height={100}
+                width={100}
+                className="h-30 w-full object-cover object-center"
               />
             </div>
           ))}

@@ -30,7 +30,12 @@ const config = {
           "300": "#34724B",
           "400": "#2D593D",
         },
-        // primarygreen-200: "#9BBE83",
+        primaryorange: {
+            "100": "#EC8C74",
+            "200": "#E97D62",
+            "300": "#E76F51",
+            "400": "#D06449"
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

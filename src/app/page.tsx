@@ -66,7 +66,7 @@ export default async function Home({
           <div className="flex justify-between items-center">
             <p className="text-sm sm:text-base">${products[0].price}</p>
             <Link
-              className="inline-block bg-primarygreen-300 hover:bg-purple-600 text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
+              className="inline-block bg-[#E76F51] hover:bg-purple-600 text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
               href={`products/${products[0].id}`}
             >
               Shop Now
@@ -98,7 +98,7 @@ export default async function Home({
           <div className="flex justify-between items-center">
             <p className="text-sm">Rs. 9,300</p>
             <Link
-              className="inline-block bg-primarygreen-200 hover:bg-primarygreen-300 text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
+              className="inline-block bg-primaryorange-300 hover:bg-primaryorange-100 text-white py-2 px-4 rounded-md font-semibold uppercase tracking-wide transition duration-300"
               href={`products/${products[0].id}`}
             >
               Shop Now
