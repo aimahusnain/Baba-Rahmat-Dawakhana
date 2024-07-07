@@ -8,21 +8,32 @@ datasource db {
 }
 
 model Product {
-  id          String     @id @default(auto()) @map("_id") @db.ObjectId
-  description String
-  imageUrls   String[]
-  name        String
-  price       Int
-  collections String
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
-  CartItem    CartItem[]
+  id                  String       @id @default(auto()) @map("_id") @db.ObjectId
+  description         String
+  imageUrls           String[]
+  name                String
+  price               Int
+  collections         String
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime     @updatedAt
+  CartItem            CartItem[]
   detailedDescription String?
-@@map("products")
+  Collections         Collections? @relation(fields: [collectionsId], references: [id])
+  collectionsId       String?
+
+  @@map("products")
+}
+
+model Collections {
+  id          String    @id @default(cuid()) @map("_id")
+  title       String
+  image       String?
+  description String?
+  Product     Product[]
 }
 
 model Cart {
-  id        String     @id @default(auto()) @map("_id") @db.ObjectId
+  id        String     @id @default(cuid()) @map("_id") @db.ObjectId
   items     CartItem[]
   userId    String?    @db.ObjectId
   user      User?      @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -81,8 +92,8 @@ model Contact {
 }
 
 model NewsLetter {
-  id       String @id @default(cuid()) @map("_id")
-  email    String
+  id    String @id @default(cuid()) @map("_id")
+  email String
 }
 
 model User {

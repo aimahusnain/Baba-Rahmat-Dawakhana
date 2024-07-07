@@ -48,8 +48,7 @@ export default function AddProductForm(collections: any) {
   };
 
   return (
-      <div className="flex justify-center mx-3 min-h-screen items-center">
-        <div className="bg-white border shadow-xl rounded-xl p-6 py-7 w-full lg:w-2/5">
+        <div className="bg-white border shadow-xl rounded-xl p-6 py-7 w-full">
           <h1 className="text-3xl font-sans font-bold mb-2 text-center">
             Add Product
           </h1>
@@ -110,6 +109,5 @@ export default function AddProductForm(collections: any) {
             <Button type="submit">Add Product</Button>
           </form>
         </div>
-      </div>
   );
 }
